@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Russo One';
+    src: url('fonts/Russo_One/RussoOne-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color:rgb(185, 158, 123);
+}
+
+
+header {
+    background-image: url(img/capa1_11zon.webp);
+    background-position: center; /* Você pode ajustar conforme necessário */
+    background-size: cover;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo,
+.menu {
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;
+    color: #ffffff;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 15px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: rgb(148, 150, 20);
+    transition: color 0.3s, font-size 0.3s;
+    /* Adicionando transição para a mudança de tamanho da fonte */
+    font-size: 18px;
+    /* Tamanho inicial da fonte */
+}
+
+.menu-item a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* Tamanho da fonte ao passar o mouse */
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .menu {
+        display: block;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        background-color: #b6b463;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-item {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #76d6d1;
+    }
+
+    .menu-item a {
+        color: rgb(31, 73, 47);
+        transition: color 0.3s, font-size 0.3s;
+        /* Adicionando transição para a mudança de tamanho da fonte */
+        font-size: 16px;
+        /* Tamanho inicial da fonte */
+    }
+
+    .menu-item a:hover {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        /* Tamanho da fonte ao passar o mouse */
+    }
+}
+
+
+/* Logo do Grupo */
+.logo img {
+    max-width: 20vh;
+    /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+}
+
+
+/* Config main */
+
+main {
+    background-color: #d8d1d1;
+    padding: 1.2em;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    /* Centralizar o elemento 'main' na página */
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: #d8d1d1;
+    }
+
+    main {
+        width: 90%;
+
+    }
+
+
+    /* textual */
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+
+    }
+
+    h1 {
+        font-size: 2.5em;
+        /* Ajuste o tamanho conforme necessário */
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+        /* Tamanho padrão para parágrafos */
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+            /* Ajuste o tamanho conforme necessário para telas menores */
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        h3 {
+            font-size: 1.4em;
+        }
+
+        h4 {
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    sup {
+        font-size: 0.8em;
+        vertical-align: super;
+        color: #000000;
+        font-weight: bold;
+    }
+}
